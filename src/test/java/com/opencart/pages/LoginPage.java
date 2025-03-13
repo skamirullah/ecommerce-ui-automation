@@ -14,10 +14,11 @@ public final class LoginPage extends WebElementUtil {
         super(driver);
     }
 
-    public MyAccountPage loginToApplication(String email, String password){
+    public MyAccountPage loginToApplication(String email, String password) throws InterruptedException {
        enterText(EMAIL_FIELD, email);
        enterText(PASSWORD_FIELD, password);
        clickOn(LOGIN_BUTTON);
+       Thread.sleep(1000);
        MyAccountPage myAccountPage = new MyAccountPage(getDriver());
        return myAccountPage;
     }

@@ -1,8 +1,18 @@
 package com.opencart.pages;
 
 import com.opencart.constants.Browser;
+import static com.opencart.constants.Env.*;
+import com.opencart.constants.Env;
+
+import static com.opencart.utility.JSONUtil.readJSON;
+import static com.opencart.utility.PropertiesUtil.*;
+
+import com.opencart.utility.JSONUtil;
+import com.opencart.utility.PropertiesUtil;
 import com.opencart.utility.WebElementUtil;
 import org.openqa.selenium.By;
+
+import java.util.Properties;
 
 public final class HomePage extends WebElementUtil {
 
@@ -11,7 +21,8 @@ public final class HomePage extends WebElementUtil {
 
     public HomePage(Browser browserName) {
         super(browserName);
-        navigateToUrl("https://awesomeqa.com/ui/index.php");
+       // navigateToUrl(readProperty(QA, "url"));
+        navigateToUrl(readJSON(QA));
         maximizeWindow();
     }
 
