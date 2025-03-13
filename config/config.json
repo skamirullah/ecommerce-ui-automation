@@ -1,0 +1,13 @@
+{
+  "environments": {
+    "DEV": {
+      "url": "https://awesomeqa.com/ui/index.php"
+    },
+    "QA": {
+      "url": "https://awesomeqa.com/ui/index.php"
+    },
+    "UAT": {
+      "url": "https://awesomeqa.com/ui/index.php"
+    }
+  }
+}
