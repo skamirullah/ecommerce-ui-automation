@@ -2,6 +2,11 @@ package com.opencart.pojo;
 
 public class User {
 
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
     private String email;
     private String password;
 
@@ -9,15 +14,15 @@ public class User {
         return email;
     }
 
-    public User setEmail() {
-        return this;
-    }
-
     public String getPassword() {
         return password;
     }
 
-    public User setPassword() {
-        return this;
+    @Override
+    public String toString() {
+        return "User{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
