@@ -9,6 +9,16 @@ import org.testng.annotations.Test;
 import static com.opencart.constants.Browser.CHROME;
 import static org.testng.Assert.assertEquals;
 
+/*
+ * How to write Good Test?
+ * Test method should have Small test scripts
+ * Test method should not have conditional statement, loops, try catch
+ * Test scri pts should only follow Test Steps
+ * Reduce the use of local variable
+ * At least one assertion!
+ */
+
+
 public class LoginTest {
 
     HomePage homePage;
@@ -18,31 +28,38 @@ public class LoginTest {
         homePage = new HomePage(CHROME);
     }
 
-
     @Test(description = "verifies valid login",
             groups = {"e2e, sanity"},
             dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
             dataProvider = "LoginTestDataProvider")
     public void validLoginTests(User user) throws InterruptedException {
-        /*
-        * How to write Good Test?
-        * Test method should have Small test scripts
-        * Test method should not have conditional statement, loops, try catch
-        * Test scri pts should only follow Test Steps
-        * Reduce the use of local variable
-        * At least one assertion!
-         */
+
         assertEquals(homePage.navigateToLoginPage()
                 .loginToApplication(user.getEmail(), user.getPassword())
                 .getMyAccountText(), "My Account");
-
-
-
-
-
-
-
-
-
     }
+
+    @Test(description = "verifies valid login with csv",
+            groups = {"e2e, sanity"},
+            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
+            dataProvider = "LoginTestCSVDataProvider")
+    public void validLoginTestsWithCSV(User user) throws InterruptedException {
+
+        assertEquals(homePage.navigateToLoginPage()
+                .loginToApplication(user.getEmail(), user.getPassword())
+                .getMyAccountText(), "My Account");
+    }
+
+    @Test(description = "verifies valid login with csv",
+            groups = {"e2e, sanity"},
+            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
+            dataProvider = "LoginTestExcelDataProvider")
+    public void validLoginTestsWithExcel(User user) throws InterruptedException {
+
+        assertEquals(homePage.navigateToLoginPage()
+                .loginToApplication(user.getEmail(), user.getPassword())
+                .getMyAccountText(), "My Account");
+    }
+
+
 }

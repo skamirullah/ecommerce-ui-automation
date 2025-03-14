@@ -15,8 +15,10 @@
         <selenium.version>4.29.0</selenium.version>
         <testng.version>7.11.0</testng.version>
         <gson.version>2.12.1</gson.version>
+        <opencsv.version>5.10</opencsv.version>
+        <poi.version>5.4.0</poi.version>
+        <poi.ooxml.version>5.4.0</poi.ooxml.version>
     </properties>
-
 
     <dependencies>
         <dependency>
@@ -30,11 +32,25 @@
             <version>${testng.version}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>${gson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>${opencsv.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.ooxml.version}</version>
         </dependency>
 
     </dependencies>
