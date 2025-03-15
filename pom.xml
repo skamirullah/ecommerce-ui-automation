@@ -70,7 +70,6 @@
             <artifactId>extentreports</artifactId>
             <version>${extent.report.version}</version>
         </dependency>
-
     </dependencies>
 
 </project>
