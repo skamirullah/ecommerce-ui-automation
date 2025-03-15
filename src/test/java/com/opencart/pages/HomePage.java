@@ -13,6 +13,7 @@ import com.opencart.utility.PropertiesUtil;
 import com.opencart.utility.WebElementUtil;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 import java.util.Properties;
 
@@ -22,9 +23,16 @@ public final class HomePage extends WebElementUtil {
     private static final By LOGIN = By.xpath("//a[text()='Login']");
     Logger logger = LoggerUtil.getLogger(this.getClass());
 
-    public HomePage(Browser browserName) {
-        super(browserName);
+    public HomePage(Browser browserName, boolean isHeadless) {
+        super(browserName, isHeadless);
        // navigateToUrl(readProperty(QA, "url"));
+        navigateToUrl(readJSON(QA).getUrl());
+        maximizeWindow();
+    }
+
+    public HomePage(WebDriver driver) {
+        super(driver);
+        // navigateToUrl(readProperty(QA, "url"));
         navigateToUrl(readJSON(QA).getUrl());
         maximizeWindow();
     }

@@ -5,7 +5,9 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.io.File;
 import java.io.IOException;
@@ -43,6 +45,32 @@ public abstract class WebElementUtil {
             driver.set(new ChromeDriver());
         } else if (browserName == Browser.FIREFOX) {
             driver.set(new FirefoxDriver());
+        } else {
+            System.out.println("Please provide correct browser name !!");
+        }
+    }
+
+    public WebElementUtil(Browser browserName, boolean isHeadless){
+        logger.info("Launching " + browserName + " browser");
+        if(browserName == Browser.CHROME){
+            if(isHeadless){
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--headless"); //headless mode
+                options.addArguments("window-size=1920,1080");
+                driver.set(new ChromeDriver(options));
+            } else {
+                driver.set(new ChromeDriver());
+            }
+        } else if (browserName == Browser.FIREFOX) {
+            if(isHeadless){
+                FirefoxOptions options = new FirefoxOptions();
+                options.addArguments("--headless=old"); //headless mode
+                options.addArguments("window-size=1920,1080");
+                options.addArguments("disable-gpu");
+                driver.set(new FirefoxDriver(options));
+            } else {
+                driver.set(new FirefoxDriver());
+            }
         } else {
             System.out.println("Please provide correct browser name !!");
         }
@@ -92,9 +120,12 @@ public abstract class WebElementUtil {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         return path;
+    }
 
-
+    public void quit(){
+        if(driver.get() != null){
+            driver.get().quit();
+        }
     }
 }

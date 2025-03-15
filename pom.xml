@@ -21,8 +21,33 @@
         <log4j.core.version>2.24.3</log4j.core.version>
         <log4j.api.version>2.24.3</log4j.api.version>
         <extent.report.version>5.1.2</extent.report.version>
+        <maven.surefire.version>3.5.2</maven.surefire.version>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <configuration>
+                        <systemPropertyVariables>
+                            <!--suppress UnresolvedMavenProperty -->
+                            <browser>${browser}</browser>
+                            <!--suppress UnresolvedMavenProperty -->
+                            <isLambdaTest>${isLambdaTest}</isLambdaTest>
+                            <!--suppress UnresolvedMavenProperty -->
+                            <isHeadless>${isHeadless}</isHeadless>
+                        </systemPropertyVariables>
+                    </configuration>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -70,6 +95,7 @@
             <artifactId>extentreports</artifactId>
             <version>${extent.report.version}</version>
         </dependency>
+
     </dependencies>
 
 </project>
