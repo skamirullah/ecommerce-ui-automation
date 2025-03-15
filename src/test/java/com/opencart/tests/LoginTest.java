@@ -47,7 +47,7 @@ public class LoginTest extends TestBase{
     public void validLoginTestsWithExcel(User user) throws InterruptedException {
        assertEquals(homePage.navigateToLoginPage()
                 .loginToApplication(user.getEmail(), user.getPassword())
-                .getMyAccountText(), "My Accounts");
+                .getMyAccountText(), "My Account");
     }
 
 }

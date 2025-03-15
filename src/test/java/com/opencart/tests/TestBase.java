@@ -38,7 +38,6 @@ public class TestBase {
             logger.info("Loading homepage of the application");
             homePage = new HomePage(Browser.valueOf(browser.toUpperCase()), isHeadless);
         }
-
     }
 
     public WebElementUtil getInstance(){
