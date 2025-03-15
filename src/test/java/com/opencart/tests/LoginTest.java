@@ -1,12 +1,11 @@
 package com.opencart.tests;
 
-import com.opencart.pages.HomePage;
-
 import com.opencart.pojo.User;
-import org.testng.annotations.BeforeMethod;
+import com.opencart.utility.LoggerUtil;
+import org.apache.logging.log4j.Logger;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import static com.opencart.constants.Browser.CHROME;
 import static org.testng.Assert.assertEquals;
 
 /*
@@ -19,21 +18,14 @@ import static org.testng.Assert.assertEquals;
  */
 
 
-public class LoginTest {
-
-    HomePage homePage;
-
-    @BeforeMethod(description = "Load application homepage")
-    public void setup(){
-        homePage = new HomePage(CHROME);
-    }
+@Listeners({com.opencart.listeners.TestListener.class})
+public class LoginTest extends TestBase{
 
     @Test(description = "verifies valid login",
             groups = {"e2e, sanity"},
             dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
             dataProvider = "LoginTestDataProvider")
     public void validLoginTests(User user) throws InterruptedException {
-
         assertEquals(homePage.navigateToLoginPage()
                 .loginToApplication(user.getEmail(), user.getPassword())
                 .getMyAccountText(), "My Account");
@@ -53,13 +45,14 @@ public class LoginTest {
     @Test(description = "verifies valid login with csv",
             groups = {"e2e, sanity"},
             dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
-            dataProvider = "LoginTestExcelDataProvider")
+            dataProvider = "LoginTestExcelDataProvider",
+            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
     public void validLoginTestsWithExcel(User user) throws InterruptedException {
-
         assertEquals(homePage.navigateToLoginPage()
                 .loginToApplication(user.getEmail(), user.getPassword())
-                .getMyAccountText(), "My Account");
+                .getMyAccountText(), "My Account");;
     }
+
 
 
 }

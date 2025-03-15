@@ -11,7 +11,7 @@ import java.io.FileReader;
 
 public class JSONUtil {
 
-    public static String readJSON(Env env) {
+    public static Environment readJSON(Env env) {
         Gson gson = new Gson();
         File jsonFile = new File(System.getProperty("user.dir") + "/config/config.json");
         FileReader fileReader = null;
@@ -22,6 +22,6 @@ public class JSONUtil {
         }
         Config config = gson.fromJson(fileReader, Config.class);
         Environment environment = config.getEnvironments().get(env.toString());
-        return environment.getUrl();
+        return environment;
     }
 }

@@ -1,13 +1,16 @@
 {
   "environments": {
     "DEV": {
-      "url": "https://awesomeqa.com/ui/index.php"
+      "url": "https://awesomeqa.com/ui/index.php",
+      "MAX_NUMBER_OF_ATTEMPTS": 3
     },
     "QA": {
-      "url": "https://awesomeqa.com/ui/index.php"
+      "url": "https://awesomeqa.com/ui/index.php",
+      "MAX_NUMBER_OF_ATTEMPTS": 3
     },
     "UAT": {
-      "url": "https://awesomeqa.com/ui/index.php"
+      "url": "https://awesomeqa.com/ui/index.php",
+      "MAX_NUMBER_OF_ATTEMPTS": 3
     }
   }
 }
