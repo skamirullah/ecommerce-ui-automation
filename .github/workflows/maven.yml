@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Running Opencart Test Automation with Maven
-      run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=true
+      run: mvn test -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=true
       
     - name: Upload Test logs
       if: always()
