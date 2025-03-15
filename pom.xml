@@ -18,6 +18,9 @@
         <opencsv.version>5.10</opencsv.version>
         <poi.version>5.4.0</poi.version>
         <poi.ooxml.version>5.4.0</poi.ooxml.version>
+        <log4j.core.version>2.24.3</log4j.core.version>
+        <log4j.api.version>2.24.3</log4j.api.version>
+        <extent.report.version>5.1.2</extent.report.version>
     </properties>
 
     <dependencies>
@@ -51,6 +54,21 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>${poi.ooxml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extent.report.version}</version>
         </dependency>
 
     </dependencies>
