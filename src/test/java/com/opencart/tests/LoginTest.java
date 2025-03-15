@@ -19,7 +19,7 @@ import static org.testng.Assert.assertEquals;
 @Listeners({com.opencart.listeners.TestListener.class})
 public class LoginTest extends TestBase{
 
-    @Test(description = "verifies valid login",
+    @Test(description = "verifies valid login with json",
             groups = {"e2e, sanity"},
             dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
             dataProvider = "LoginTestDataProvider")
@@ -29,28 +29,25 @@ public class LoginTest extends TestBase{
                 .getMyAccountText(), "My Account");
     }
 
-//    @Test(description = "verifies valid login with csv",
-//            groups = {"e2e, sanity"},
-//            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
-//            dataProvider = "LoginTestCSVDataProvider")
-//    public void validLoginTestsWithCSV(User user) throws InterruptedException {
-//
-//        assertEquals(homePage.navigateToLoginPage()
-//                .loginToApplication(user.getEmail(), user.getPassword())
-//                .getMyAccountText(), "My Account");
-//    }
-//
-//    @Test(description = "verifies valid login with csv",
-//            groups = {"e2e, sanity"},
-//            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
-//            dataProvider = "LoginTestExcelDataProvider",
-//            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
-//    public void validLoginTestsWithExcel(User user) throws InterruptedException {
-//        assertEquals(homePage.navigateToLoginPage()
-//                .loginToApplication(user.getEmail(), user.getPassword())
-//                .getMyAccountText(), "My Account");;
-//    }
+    @Test(description = "verifies valid login with csv",
+            groups = {"e2e, sanity"},
+            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
+            dataProvider = "LoginTestCSVDataProvider")
+    public void validLoginTestsWithCSV(User user) throws InterruptedException {
+      assertEquals(homePage.navigateToLoginPage()
+                .loginToApplication(user.getEmail(), user.getPassword())
+                .getMyAccountText(), "My Account");
+    }
 
-
+    @Test(description = "verifies valid login with excel",
+            groups = {"e2e, sanity"},
+            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
+            dataProvider = "LoginTestExcelDataProvider",
+            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
+    public void validLoginTestsWithExcel(User user) throws InterruptedException {
+       assertEquals(homePage.navigateToLoginPage()
+                .loginToApplication(user.getEmail(), user.getPassword())
+                .getMyAccountText(), "My Accounts");
+    }
 
 }

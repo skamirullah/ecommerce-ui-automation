@@ -8,10 +8,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 
 public abstract class WebElementUtil {
@@ -31,12 +34,15 @@ public abstract class WebElementUtil {
         logger.info("Launching " + browserName + " browser");
         if(browserName.equalsIgnoreCase("chrome")){
             driver.set(new ChromeDriver());
+            maximizeWindow();
         } else if (browserName.equalsIgnoreCase("firefox")) {
             driver.set(new FirefoxDriver());
+            maximizeWindow();
         } else {
             logger.error("Please provide correct browser name !!");
             System.err.println("Please provide correct browser name !!");
         }
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
     }
 
     public WebElementUtil(Browser browserName){
@@ -48,6 +54,7 @@ public abstract class WebElementUtil {
         } else {
             System.out.println("Please provide correct browser name !!");
         }
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
     }
 
     public WebElementUtil(Browser browserName, boolean isHeadless){
@@ -60,7 +67,9 @@ public abstract class WebElementUtil {
                 driver.set(new ChromeDriver(options));
             } else {
                 driver.set(new ChromeDriver());
+                maximizeWindow();
             }
+            getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         } else if (browserName == Browser.FIREFOX) {
             if(isHeadless){
                 FirefoxOptions options = new FirefoxOptions();
@@ -70,7 +79,9 @@ public abstract class WebElementUtil {
                 driver.set(new FirefoxDriver(options));
             } else {
                 driver.set(new FirefoxDriver());
+                maximizeWindow();
             }
+            getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         } else {
             System.out.println("Please provide correct browser name !!");
         }
@@ -88,6 +99,8 @@ public abstract class WebElementUtil {
 
     public void clickOn(By locator){
         logger.info("Finding element with locator " + locator);
+        WebDriverWait wait = new WebDriverWait(driver.get(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
         WebElement webElement = driver.get().findElement(locator);
         logger.info("Element found now trying to perform click");
         webElement.click();
@@ -95,12 +108,17 @@ public abstract class WebElementUtil {
 
     public void enterText(By locator, String text){
         logger.info("Finding element with locator " + locator);
+        WebDriverWait wait = new WebDriverWait(driver.get(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
         WebElement element = driver.get().findElement(locator);
         logger.info("Element found now trying to enter text " + text);
         element.sendKeys(text);
     }
+
     public String getElementText(By locator){
         logger.info("Finding element with locator " + locator);
+        WebDriverWait wait = new WebDriverWait(driver.get(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
         WebElement element = driver.get().findElement(locator);
         logger.info("Element found now trying to get the value");
         return element.getText();
@@ -108,6 +126,9 @@ public abstract class WebElementUtil {
 
     public String captureScreenshot(String name){
         WebDriver driverInstance = driver.get();
+        if (driverInstance == null) {
+            throw new RuntimeException("WebDriver instance is null! Cannot capture screenshot.");
+        }
         TakesScreenshot screenshot = (TakesScreenshot) driverInstance;
         File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
         Date date = new Date();

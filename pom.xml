@@ -35,7 +35,6 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <configuration>
                         <systemPropertyVariables>
                             <!--suppress UnresolvedMavenProperty -->
                             <browser>${browser}</browser>
@@ -44,7 +43,6 @@
                             <!--suppress UnresolvedMavenProperty -->
                             <isHeadless>${isHeadless}</isHeadless>
                         </systemPropertyVariables>
-                    </configuration>
                 </configuration>
             </plugin>
             <plugin>

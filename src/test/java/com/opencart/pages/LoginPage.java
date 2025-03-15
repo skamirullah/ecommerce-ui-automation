@@ -18,7 +18,6 @@ public final class LoginPage extends WebElementUtil {
        enterText(EMAIL_FIELD, email);
        enterText(PASSWORD_FIELD, password);
        clickOn(LOGIN_BUTTON);
-       Thread.sleep(1000);
        MyAccountPage myAccountPage = new MyAccountPage(getDriver());
        return myAccountPage;
     }

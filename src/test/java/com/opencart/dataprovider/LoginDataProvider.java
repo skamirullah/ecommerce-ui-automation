@@ -16,7 +16,7 @@ import java.util.List;
 
 public class LoginDataProvider {
 
-    @DataProvider(name = "LoginTestDataProvider")
+    @DataProvider(name = "LoginTestDataProvider", parallel = true)
     public Iterator<Object[]> loginDataProvider(){
         Gson gson = new Gson();
         File testDataFile = new File(System.getProperty("user.dir") + "//testdata/loginData.json");
@@ -35,12 +35,12 @@ public class LoginDataProvider {
         return dataToReturn.iterator();
     }
 
-    @DataProvider(name = "LoginTestCSVDataProvider")
+    @DataProvider(name = "LoginTestCSVDataProvider", parallel = true)
     public Iterator<User> loginCSVDataProvider(){
         return CSVReaderUtilty.readCSV("loginData.csv");
     }
 
-    @DataProvider(name = "LoginTestExcelDataProvider")
+    @DataProvider(name = "LoginTestExcelDataProvider", parallel = true)
     public Iterator<User> loginExcelDataProvider(){
         return ExcelReaderUtil.readExcel("loginData.xlsx");
     }

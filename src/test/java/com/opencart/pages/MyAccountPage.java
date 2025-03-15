@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class MyAccountPage extends WebElementUtil {
 
-    private static final By MY_ACCOUNT_TEXT = By.xpath("//h2[text()='My Account']");
+    private static final By MY_ACCOUNT_TEXT = By.xpath("//h2[contains(text(),'My Account')]");
 
     public MyAccountPage(WebDriver driver) {
         super(driver);

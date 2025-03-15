@@ -46,7 +46,6 @@ public class TestListener implements ITestListener {
         ExtentReportUtil.getTest().addScreenCaptureFromPath(screenshotPath);
     }
 
-
     @Override
     public void onTestSkipped(ITestResult result) {
         logger.warn("{} SKIPPED", result.getMethod().getMethodName());
