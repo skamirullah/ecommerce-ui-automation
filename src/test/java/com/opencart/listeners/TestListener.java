@@ -1,6 +1,5 @@
 package com.opencart.listeners;
 
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.opencart.tests.TestBase;
 import com.opencart.utility.ExtentReportUtil;
@@ -37,7 +36,7 @@ public class TestListener implements ITestListener {
         logger.error(result.getThrowable().getMessage());
         ExtentReportUtil.getTest().log(Status.FAIL, result.getMethod().getMethodName() + " FAILED");
         ExtentReportUtil.getTest().log(Status.FAIL, result.getThrowable().getMessage());
-        Object testClass =  result.getInstance();
+        Object testClass = result.getInstance();
         TestBase baseTest = (TestBase) testClass;
         WebElementUtil webElementUtil = baseTest.getInstance();
         logger.info("Capturing screenshot for the failed tests");

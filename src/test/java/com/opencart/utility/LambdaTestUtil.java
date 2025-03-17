@@ -9,12 +9,12 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LambdaTestUtil{
+public class LambdaTestUtil {
     private static final String HUB_URL = "https://hub.lambdatest.com/wd/hub";
     private static ThreadLocal<WebDriver> driverLocal = new ThreadLocal<>();
     private static ThreadLocal<DesiredCapabilities> capabilitiesLocal = new ThreadLocal<>();
 
-    public static WebDriver initializeLambdaTestSession(String browser, String testName){
+    public static WebDriver initializeLambdaTestSession(String browser, String testName) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName", browser);
         capabilities.setCapability("browserVersion", "127");
@@ -38,13 +38,11 @@ public class LambdaTestUtil{
         return driverLocal.get();
     }
 
-    public static void quitSession(){
-        if(driverLocal.get() != null){
+    public static void quitSession() {
+        if (driverLocal.get() != null) {
             driverLocal.get().quit();
         }
     }
-
-
 
 
 }

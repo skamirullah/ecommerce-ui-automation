@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 
@@ -22,7 +22,8 @@ public class TestBase {
 
     @Parameters({"browser", "isLambdaTest", "isHeadless"})
     @BeforeMethod(description = "Load application homepage")
-    public void setup(String browser, boolean isLambdaTest, boolean isHeadless, ITestResult result){
+    public void setup(@Optional("chrome") String browser, @Optional("false") boolean isLambdaTest,
+                      @Optional("false") boolean isHeadless, ITestResult result) {
 
         /* Use if you want to run test class
             @Optional("chrome") String browser,
@@ -31,7 +32,7 @@ public class TestBase {
          */
         this.isLambdaTest = isLambdaTest;
         WebDriver lambdaDriver = null;
-        if(isLambdaTest) {
+        if (isLambdaTest) {
             lambdaDriver = LambdaTestUtil.initializeLambdaTestSession(browser, result.getMethod().getMethodName());
             homePage = new HomePage(lambdaDriver);
         } else {
@@ -40,13 +41,13 @@ public class TestBase {
         }
     }
 
-    public WebElementUtil getInstance(){
+    public WebElementUtil getInstance() {
         return homePage;
     }
 
     @AfterMethod(description = "Quit the browser")
-    public void tearDown(){
-        if(isLambdaTest){
+    public void tearDown() {
+        if (isLambdaTest) {
             LambdaTestUtil.quitSession(); //quit on remote -lambda
         } else {
             homePage.quit(); //quit local

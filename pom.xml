@@ -23,6 +23,7 @@
         <extent.report.version>5.1.2</extent.report.version>
         <maven.surefire.version>3.5.2</maven.surefire.version>
         <maven.compiler.version>3.14.0</maven.compiler.version>
+        <faker.version>1.0.2</faker.version>
     </properties>
 
     <build>
@@ -35,14 +36,14 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                        <systemPropertyVariables>
-                            <!--suppress UnresolvedMavenProperty -->
-                            <browser>${browser}</browser>
-                            <!--suppress UnresolvedMavenProperty -->
-                            <isLambdaTest>${isLambdaTest}</isLambdaTest>
-                            <!--suppress UnresolvedMavenProperty -->
-                            <isHeadless>${isHeadless}</isHeadless>
-                        </systemPropertyVariables>
+                    <systemPropertyVariables>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <browser>${browser}</browser>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <isLambdaTest>${isLambdaTest}</isLambdaTest>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <isHeadless>${isHeadless}</isHeadless>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
             <plugin>
@@ -103,7 +104,10 @@
             <artifactId>extentreports</artifactId>
             <version>${extent.report.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${faker.version}</version>
+        </dependency>
     </dependencies>
-
 </project>
