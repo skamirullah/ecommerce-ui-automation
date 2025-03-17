@@ -1,8 +1,6 @@
 package com.opencart.listeners;
 
-import com.opencart.constants.Env;
 import com.opencart.utility.JSONUtil;
-import com.opencart.utility.PropertiesUtil;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 

@@ -2,15 +2,21 @@
   "environments": {
     "DEV": {
       "url": "https://naveenautomationlabs.com/opencart/index.php",
-      "MAX_NUMBER_OF_ATTEMPTS": 3
+      "MAX_NUMBER_OF_ATTEMPTS": 3,
+      "IMPLICIT_WAIT": 20,
+      "EXPLICIT_WAIT": 15
     },
     "QA": {
       "url": "https://naveenautomationlabs.com/opencart/index.php",
-      "MAX_NUMBER_OF_ATTEMPTS": 3
+      "MAX_NUMBER_OF_ATTEMPTS": 3,
+      "IMPLICIT_WAIT": 20,
+      "EXPLICIT_WAIT": 15
     },
     "UAT": {
       "url": "https://naveenautomationlabs.com/opencart/index.php",
-      "MAX_NUMBER_OF_ATTEMPTS": 3
+      "MAX_NUMBER_OF_ATTEMPTS": 3,
+      "IMPLICIT_WAIT": 20,
+      "EXPLICIT_WAIT": 15
     }
   }
 }

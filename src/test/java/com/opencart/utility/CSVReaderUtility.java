@@ -3,15 +3,16 @@ package com.opencart.utility;
 import com.opencart.pojo.User;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class CSVReaderUtilty {
+public class CSVReaderUtility {
 
-    public static Iterator<User> readCSV(String fileName){
+    public static Iterator<User> readCSV(String fileName) {
         FileReader csvFile;
         CSVReader csvReader;
         String[] line;
@@ -25,7 +26,7 @@ public class CSVReaderUtilty {
 //            csvReader.readNext(); //Row 3
 //            data = csvReader.readNext(); //Row 4 [If no row or we have reached the end of the CSV, readNext returns null]
             userList = new ArrayList<>();
-            while ((line = csvReader.readNext())!=null){
+            while ((line = csvReader.readNext()) != null) {
                 userData = new User(line[0], line[1]);
                 userList.add(userData);
             }

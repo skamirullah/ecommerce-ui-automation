@@ -5,16 +5,14 @@ import org.apache.logging.log4j.Logger;
 
 public class LoggerUtil {
 
-    private LoggerUtil(){
-
+    private LoggerUtil() {
     }
 
-    public static Logger getLogger(Class<?> clazz){
+    public static Logger getLogger(Class<?> clazz) {
         Logger logger = null;
-        if(logger == null){
+        if (logger == null) {
             logger = LogManager.getLogger(clazz);
         }
         return logger;
     }
-
 }

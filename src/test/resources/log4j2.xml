@@ -9,9 +9,7 @@
         <File name="FileLogger" fileName="logs/automation.log" append="false">
             <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %level %logger::%M::%L %msg %n"></PatternLayout>
         </File>
-
     </Appenders>
-
     <Loggers>
         <Root level="info">
             <AppenderRef ref="Console"></AppenderRef>
