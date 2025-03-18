@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class CSVReaderUtility {
+public class CSVReaderUtil {
 
     public static Iterator<User> readCSV(String fileName) {
         FileReader csvFile;

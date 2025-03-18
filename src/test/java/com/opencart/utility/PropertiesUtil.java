@@ -22,7 +22,7 @@ public class PropertiesUtil {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        String value = properties.getProperty(propertyName.toUpperCase());
+        String value = properties.getProperty(propertyName);
         return value;
     }
 }

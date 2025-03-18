@@ -8,7 +8,7 @@
         <classes>
             <class name="com.opencart.tests.LoginTest">
                 <methods>
-                    <include name="verifyValidLoginTest"/>
+                    <include name="verifyValidLoginTestWithJSON"/>
                     <include name="verifyInvalidLoginTest"/>
                     <exclude name="verifyValidLoginTestsWithCSV"/>
                     <exclude name="verifyValidLoginTestsWithExcel"/>
