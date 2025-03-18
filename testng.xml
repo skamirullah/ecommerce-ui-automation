@@ -10,8 +10,8 @@
                 <methods>
                     <include name="verifyValidLoginTestWithJSON"/>
                     <include name="verifyInvalidLoginTest"/>
-                    <exclude name="verifyValidLoginTestsWithCSV"/>
-                    <exclude name="verifyValidLoginTestsWithExcel"/>
+                    <include name="verifyValidLoginTestsWithCSV"/>
+                    <include name="verifyValidLoginTestsWithExcel"/>
                 </methods>
             </class>
             <class name="com.opencart.tests.AddNewAddressTest">
