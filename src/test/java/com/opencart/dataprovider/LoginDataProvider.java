@@ -3,7 +3,7 @@ package com.opencart.dataprovider;
 import com.google.gson.Gson;
 import com.opencart.pojo.TestData;
 import com.opencart.pojo.User;
-import com.opencart.utility.CSVReaderUtility;
+import com.opencart.utility.CSVReaderUtil;
 import com.opencart.utility.ExcelReaderUtil;
 import org.testng.annotations.DataProvider;
 
@@ -37,7 +37,7 @@ public class LoginDataProvider {
 
     @DataProvider(name = "LoginTestCSVDataProvider", parallel = true)
     public Iterator<User> loginCSVDataProvider() {
-        return CSVReaderUtility.readCSV("loginData.csv");
+        return CSVReaderUtil.readCSV("loginData.csv");
     }
 
     @DataProvider(name = "LoginTestExcelDataProvider", parallel = true)

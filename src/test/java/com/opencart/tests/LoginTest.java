@@ -29,7 +29,7 @@ public class LoginTest extends TestBase {
             groups = {"e2e, sanity, smoke"},
             dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
             dataProvider = "LoginTestDataProvider")
-    public void verifyValidLoginTest(User user) {
+    public void verifyValidLoginTestWithJSON(User user) {
         assertEquals(homePage.navigateToLoginPage()
                 .loginToApplication(user.getEmail(), user.getPassword())
                 .getMyAccountText(), "My Account");
@@ -43,25 +43,26 @@ public class LoginTest extends TestBase {
                 .getLoginErrorMessage(), "Warning: No match for E-Mail Address and/or Password.");
     }
 
-//    @Test(description = "verifies valid login with csv",
-//            groups = {"e2e, sanity"},
-//            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
-//            dataProvider = "LoginTestCSVDataProvider")
-//    public void verifyValidLoginTestsWithCSV(User user) {
-//        assertEquals(homePage.navigateToLoginPage()
-//                .loginToApplication(user.getEmail(), user.getPassword())
-//                .getMyAccountText(), "My Account");
-//    }
-//
-//    @Test(description = "verifies valid login with excel",
-//            groups = {"e2e, sanity"},
-//            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
-//            dataProvider = "LoginTestExcelDataProvider",
-//            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
-//    public void verifyValidLoginTestsWithExcel(User user) {
-//        assertEquals(homePage.navigateToLoginPage()
-//                .loginToApplication(user.getEmail(), user.getPassword())
-//                .getMyAccountText(), "My Account");
-//    }
+    @Test(description = "verifies valid login with csv",
+            groups = {"e2e, sanity"},
+            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
+            dataProvider = "LoginTestCSVDataProvider",
+            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
+    public void verifyValidLoginTestsWithCSV(User user) {
+        assertEquals(homePage.navigateToLoginPage()
+                .loginToApplication(user.getEmail(), user.getPassword())
+                .getMyAccountText(), "My Account");
+    }
+
+    @Test(description = "verifies valid login with excel",
+            groups = {"e2e, sanity"},
+            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
+            dataProvider = "LoginTestExcelDataProvider",
+            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
+    public void verifyValidLoginTestsWithExcel(User user) {
+        assertEquals(homePage.navigateToLoginPage()
+                .loginToApplication(user.getEmail(), user.getPassword())
+                .getMyAccountText(), "My Account");
+    }
 
 }
