@@ -12,6 +12,7 @@
                     <include name="verifyInvalidLoginTest"/>
                     <include name="verifyValidLoginTestsWithCSV"/>
                     <include name="verifyValidLoginTestsWithExcel"/>
+                    <include name="verifyRetriesAndScreenshot"/>
                 </methods>
             </class>
             <class name="com.opencart.tests.AddNewAddressTest">
