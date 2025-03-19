@@ -286,6 +286,7 @@ public abstract class WebElementUtil {
     public void quit() {
         if (driver.get() != null) {
             driver.get().quit();
+            driver.remove();
         }
     }
 }

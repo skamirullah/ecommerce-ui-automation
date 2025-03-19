@@ -41,6 +41,7 @@ public class LambdaTestUtil {
     public static void quitSession() {
         if (driverLocal.get() != null) {
             driverLocal.get().quit();
+            driverLocal.remove();
         }
     }
 

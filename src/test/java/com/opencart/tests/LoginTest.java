@@ -28,7 +28,7 @@ public class LoginTest extends TestBase {
     @Test(description = "verifies valid login with json",
             groups = {"e2e, sanity, smoke"},
             dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
-            dataProvider = "LoginTestDataProvider")
+            dataProvider = "LoginTestJSONDataProvider")
     public void verifyValidLoginTestWithJSON(User user) {
         assertEquals(homePage.navigateToLoginPage()
                 .loginToApplication(user.getEmail(), user.getPassword())
@@ -64,4 +64,16 @@ public class LoginTest extends TestBase {
                 .loginToApplication(user.getEmail(), user.getPassword())
                 .getMyAccountText(), "My Account");
     }
+
+    @Test(description = "verifies the retries and screenshot for the failed test",
+            groups = {"e2e, smoke"},
+            dataProviderClass = com.opencart.dataprovider.LoginDataProvider.class,
+            dataProvider = "LoginTestJSONDataProvider",
+            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
+    public void verifyRetriesAndScreenshot(User user) {
+        assertEquals(homePage.navigateToLoginPage()
+                .loginToApplication(user.getEmail(), user.getPassword())
+                .getMyAccountText(), "Invalid Text");
+    }
+
 }

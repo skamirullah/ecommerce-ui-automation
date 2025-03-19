@@ -41,13 +41,4 @@ public class ProductCheckoutTest extends TestBase {
         System.out.println(orderStatusMessage);
         assertEquals(orderStatusMessage, "Your order has been placed!");
     }
-
-    @Test(description = "verifies the retries and screenshot for the failed test",
-            groups = {"screenshot, retries"},
-            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
-    public void verifyRetriesAndScreenshot(User user) {
-        assertEquals(homePage.navigateToLoginPage()
-                .loginToApplication(user.getEmail(), user.getPassword())
-                .getMyAccountText(), "Invalid Text");
-    }
 }

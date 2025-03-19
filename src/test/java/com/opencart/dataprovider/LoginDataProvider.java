@@ -16,8 +16,8 @@ import java.util.List;
 
 public class LoginDataProvider {
 
-    @DataProvider(name = "LoginTestDataProvider", parallel = true)
-    public Iterator<Object[]> loginDataProvider() {
+    @DataProvider(name = "LoginTestJSONDataProvider", parallel = true)
+    public Iterator<Object[]> loginTestJSONDataProvider() {
         Gson gson = new Gson();
         File testDataFile = new File(System.getProperty("user.dir") + "//testdata/loginData.json");
         FileReader fileReader;

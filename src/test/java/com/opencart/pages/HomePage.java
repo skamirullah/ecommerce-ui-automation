@@ -1,9 +1,7 @@
 package com.opencart.pages;
 
 import com.opencart.constants.Browser;
-import com.opencart.utility.ExcelReaderUtil;
 import com.opencart.utility.LoggerUtil;
-import com.opencart.utility.PropertiesUtil;
 import com.opencart.utility.WebElementUtil;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -21,14 +19,12 @@ public final class HomePage extends WebElementUtil {
 
     public HomePage(Browser browserName, boolean isHeadless) {
         super(browserName, isHeadless);
-        //navigateToUrl(readJSON(QA).getUrl());
-        navigateToUrl(PropertiesUtil.readProperty(QA, "url") );
+        navigateToUrl(readJSON(QA).getUrl());
     }
 
     public HomePage(WebDriver driver) {
         super(driver);
-        //navigateToUrl(readJSON(QA).getUrl());
-        navigateToUrl(PropertiesUtil.readProperty(QA, "url"));
+        navigateToUrl(readJSON(QA).getUrl());
     }
 
     public LoginPage navigateToLoginPage() {

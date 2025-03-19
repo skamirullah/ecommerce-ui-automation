@@ -1,10 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Ecommerce UI Test Suite" parallel="classes" thread-count="6">
+<suite name="Ecommerce UI Test Suite" parallel="methods" thread-count="6">
     <test name="Ecommerce E2E Test">
         <parameter name="browser" value="${browser}"/>
         <parameter name="isLambdaTest" value="${isLambdaTest}"/>
         <parameter name="isHeadless" value="${isHeadless}"/>
+
         <classes>
             <class name="com.opencart.tests.LoginTest">
                 <methods>
@@ -12,6 +13,7 @@
                     <include name="verifyInvalidLoginTest"/>
                     <include name="verifyValidLoginTestsWithCSV"/>
                     <include name="verifyValidLoginTestsWithExcel"/>
+                    <include name="verifyRetriesAndScreenshot"/>
                 </methods>
             </class>
             <class name="com.opencart.tests.AddNewAddressTest">
@@ -24,10 +26,9 @@
                     <include name="verifyProductSearchTest"/>
                 </methods>
             </class>
-            <class name="com.opencart.tests.SearchProductTest">
+            <class name="com.opencart.tests.ProductCheckoutTest">
                 <methods>
                     <include name="verifyProductOrder"/>
-                    <include name="verifyRetriesAndScreenshot"/>
                 </methods>
             </class>
         </classes>
