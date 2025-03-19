@@ -16,9 +16,9 @@ My primary expertise is in Java Programming Language.
 📧 **Email**: [amirthoughts@gmail.com](mailto:amirthoughts@gmail.com)  
 
 🔗 **Connect with me:**  
-- 🔗 **Portfolio:** [GitHub Profile](https://github.com/skamirullah)  
-- 🔗 **LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/skamirullah)
--  🔗 **Youtube:** [LinkedIn Profile](https://linkedin.com/in/skamirullah)
+- 🔗 **Portfolio:** [GitHub](https://github.com/skamirullah)  
+- 🔗 **LinkedIn:** [LinkedIn](https://linkedin.com/in/skamirullah)
+-  🔗 **Youtube:** [Youtube]([https://youtube.com/knowminds](https://www.youtube.com/@knowminds_official))
 
 ---
 
