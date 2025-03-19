@@ -3,6 +3,7 @@ package com.opencart.tests;
 import com.opencart.pages.CheckoutPage;
 import com.opencart.pages.SearchResultPage;
 import com.opencart.pages.ShoppingCartPage;
+import com.opencart.pojo.User;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -39,5 +40,14 @@ public class ProductCheckoutTest extends TestBase {
                 .confirmOrder();
         System.out.println(orderStatusMessage);
         assertEquals(orderStatusMessage, "Your order has been placed!");
+    }
+
+    @Test(description = "verifies the retries and screenshot for the failed test",
+            groups = {"screenshot, retries"},
+            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
+    public void verifyRetriesAndScreenshot(User user) {
+        assertEquals(homePage.navigateToLoginPage()
+                .loginToApplication(user.getEmail(), user.getPassword())
+                .getMyAccountText(), "Invalid Text");
     }
 }

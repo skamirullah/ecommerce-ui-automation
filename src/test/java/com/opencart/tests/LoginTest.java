@@ -64,14 +64,4 @@ public class LoginTest extends TestBase {
                 .loginToApplication(user.getEmail(), user.getPassword())
                 .getMyAccountText(), "My Account");
     }
-
-    @Test(description = "verifies the retries and screenshot for the failed test",
-            groups = {"screenshot, retries"},
-            retryAnalyzer = com.opencart.listeners.MyRetryAnalyzer.class)
-    public void verifyRetriesAndScreenshot(User user) {
-        assertEquals(homePage.navigateToLoginPage()
-                .loginToApplication(user.getEmail(), user.getPassword())
-                .getMyAccountText(), "Invalid Text");
-    }
-
 }
