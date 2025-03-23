@@ -18,7 +18,7 @@ My primary expertise is in Java Programming Language.
 🔗 **Connect with me:**  
 - 🔗 **Portfolio:** [GitHub](https://github.com/skamirullah)  
 - 🔗 **LinkedIn:** [LinkedIn](https://linkedin.com/in/skamirullah)
--  🔗 **Youtube:** [Youtube]([https://youtube.com/knowminds](https://www.youtube.com/@knowminds_official))
+-  🔗 **Youtube:** [Youtube](https://www.youtube.com/@knowminds_official)
 
 ---
 
