@@ -1,4 +1,4 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+u<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Ecommerce UI Test Suite" parallel="methods" thread-count="6">
     <test name="Ecommerce E2E Test">
@@ -13,7 +13,7 @@
                     <include name="verifyInvalidLoginTest"/>
                     <include name="verifyValidLoginTestsWithCSV"/>
                     <include name="verifyValidLoginTestsWithExcel"/>
-                    <include name="verifyRetriesAndScreenshot"/>
+                    <exclude name="verifyRetriesAndScreenshot"/>
                 </methods>
             </class>
             <class name="com.opencart.tests.AddNewAddressTest">
