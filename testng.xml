@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Ecommerce UI Test Suite" parallel="methods" thread-count="6">
+<suite name="Ecommerce UI Test Suite" parallel="methods" thread-count="3">
     <test name="Ecommerce E2E Test">
         <parameter name="browser" value="${browser}"/>
         <parameter name="isLambdaTest" value="${isLambdaTest}"/>
