@@ -43,13 +43,6 @@ jobs:
         name: html-report
         path: report.html
 
-    - name: Upload Test Reports
-      if: always()
-      uses: actions/upload-artifact@v4.6.1
-      with:
-        name: Test reports
-        path: report.html
-
     - name: Test Execution Status
       run: echo "Test Execution Completed!!"
 
@@ -68,10 +61,6 @@ jobs:
         folder: public/extent-reports/
         token: ${{ secrets.SECRET_TOKEN }}
         clean: true
-
-        
-
-
 
 
       
