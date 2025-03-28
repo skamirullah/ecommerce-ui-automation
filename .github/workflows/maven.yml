@@ -52,12 +52,10 @@ jobs:
       - name: Copy Report to gh-pages Folder
         if: always()
         run: |
-          rm -rf public # Ensure fresh deployment
-          mkdir -p public/screenshots
           mkdir -p public/extent-reports
-          cp -R report.html public/extent-reports/
-          cp -R screenshots/* public/screenshots/
-          ls -l public/
+          cp -R report.html  public/extent-reports/
+          cp -R screenshots/ public/extent-reports/screenshots/
+          ls -l
 
       - name: Deploy to GitHub Pages
         if: always()
