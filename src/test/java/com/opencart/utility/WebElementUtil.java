@@ -210,7 +210,7 @@ public abstract class WebElementUtil {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH-mm-ss");
         String timeStamp = simpleDateFormat.format(date);
-        String path = "./screenshots/" + name + " - " + timeStamp + ".png";
+        String path = System.getProperty("user.dir") + "/screenshots/" + name + " - " + timeStamp + ".png";
         File screenshotFile = new File(path);
         try {
             FileUtils.copyFile(screenshotData, screenshotFile);
