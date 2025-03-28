@@ -15,6 +15,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -210,7 +213,14 @@ public abstract class WebElementUtil {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd:HH-mm-ss");
         String timeStamp = simpleDateFormat.format(date);
-        String path = "./screenshots/" + name + "-" + timeStamp + ".png"; 
+        String fileName = name.replaceAll("\\s+", "_") + timeStamp + ".png"; // Remove spaces
+        Path screenshotDir = Paths.get("screenshots"); // Relative path
+        try {
+            Files.createDirectories(screenshotDir); // Ensure directory exists
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        String path = screenshotDir.resolve(fileName).toString();
         File screenshotFile = new File(path);
         try {
             FileUtils.copyFile(screenshotData, screenshotFile);
