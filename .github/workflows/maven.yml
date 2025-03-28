@@ -56,22 +56,10 @@ jobs:
     - name: Copy Report to gh-pages Folder
       if: always()
       run: |
-         mkdir -p public/extent-reports
-         mkdir -p public/extent-reports/screenshots
-
-         if [ -f "report.html" ]; then
-          cp -R report.html public/extent-reports/
-         else
-          echo "No report.html found!"
-         fi
-
-         if [ -d "screenshots" ]; then
-          cp -R screenshots/ public/extent-reports/screenshots/
-         else
-          echo "No screenshots folder found, skipping copy."
-         fi
-
-         ls -l
+        mkdir -p public/extent-reports
+        cp -R report.html  public/extent-reports/
+        cp -R screenshots/ public/extent-reports/screenshots/
+        ls -l
          
     - name: Deploy
       if: always()
