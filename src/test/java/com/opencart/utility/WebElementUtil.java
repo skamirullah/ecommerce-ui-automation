@@ -208,9 +208,9 @@ public abstract class WebElementUtil {
         TakesScreenshot screenshot = (TakesScreenshot) driverInstance;
         File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
         Date date = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH-mm-ss");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd:HH-mm-ss");
         String timeStamp = simpleDateFormat.format(date);
-        String path = ".//screenshots//" + name + " - " + timeStamp + ".png";
+        String path = "./screenshots/" + name + "-" + timeStamp + ".png"; 
         File screenshotFile = new File(path);
         try {
             FileUtils.copyFile(screenshotData, screenshotFile);
