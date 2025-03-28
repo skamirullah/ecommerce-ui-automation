@@ -63,6 +63,6 @@ jobs:
         if: always()
         uses: JamesIves/github-pages-deploy-action@v4.7.3
         with:
-          folder: public/
+          folder: public/extent-reports/
           token: ${{ secrets.SECRET_TOKEN }}
           clean: true
