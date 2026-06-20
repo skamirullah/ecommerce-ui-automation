@@ -10,7 +10,7 @@ public final class LoginPage extends WebElementUtil {
 
     private static final By EMAIL_FIELD = By.id("input-email");
     private static final By PASSWORD_FIELD = By.id("input-password");
-    private static final By LOGIN_BUTTON = By.xpath("//input[@value='Login']");
+    private static final By LOGIN_BUTTON = By.xpath("//input[@value='Login Button']");
 
     public LoginPage(WebDriver driver) {
         super(driver);
