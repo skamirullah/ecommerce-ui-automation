@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 17, 2026 05:08:57 AM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 18, 2026 05:02:37 AM</span></a>
 </li>
 </ul>
 </div>
@@ -76,55 +76,14 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyValidLoginTestsWithCSV</p>
+            <p class="name">verifyInvalidLoginTest</p>
             <p class="text-sm">
-              <span>5:09:10 AM</span> / <span>00:00:32:993</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">verifyValidLoginTestsWithCSV</h5>
-<span class='badge badge-success'>08.17.2026 5:09:10 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:43 AM</span>
-<span class='badge badge-default'>00:00:32:993</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:09:43 AM</td>
-        <td>
-          verifyValidLoginTestsWithCSV SKIPPED
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyValidLoginTestWithJSON</p>
-            <p class="text-sm">
-              <span>5:09:10 AM</span> / <span>00:00:33:137</span>
+              <span>5:02:44 AM</span> / <span>00:00:33:526</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -132,11 +91,11 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyValidLoginTestWithJSON</h5>
-<span class='badge badge-success'>08.17.2026 5:09:10 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:43 AM</span>
-<span class='badge badge-default'>00:00:33:137</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<h5 class="test-status text-fail">verifyInvalidLoginTest</h5>
+<span class='badge badge-success'>08.18.2026 5:02:44 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:17 AM</span>
+<span class='badge badge-default'>00:00:33:526</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -145,7 +104,7 @@
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyValidLoginTestWithJSON2026-08-17_05-09-43.png' src="screenshots/verifyValidLoginTestWithJSON2026-08-17_05-09-43.png">
+<img data-featherlight='screenshots/verifyInvalidLoginTest2026-08-18_05-03-17.png' src="screenshots/verifyInvalidLoginTest2026-08-18_05-03-17.png">
   
     
 
@@ -156,21 +115,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:43 AM</td>
+        <td>5:03:17 AM</td>
         <td>
-          verifyValidLoginTestWithJSON FAILED
+          verifyInvalidLoginTest FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:43 AM</td>
+        <td>5:03:17 AM</td>
         <td>
-          Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
+          Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='Login'] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35959}, goog:processID: 2601, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35959/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 380273afbbc87e8952f71dc21458c54e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41143}, goog:processID: 2736, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41143/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c78b9dda4293577a186f85a991f8567
         </td>
       </tr>
   </tbody>
@@ -178,55 +137,14 @@ Session ID: 380273afbbc87e8952f71dc21458c54e
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">verifyInvalidLoginTest</p>
-            <p class="text-sm">
-              <span>5:09:10 AM</span> / <span>00:00:02:999</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">verifyInvalidLoginTest</h5>
-<span class='badge badge-success'>08.17.2026 5:09:10 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:13 AM</span>
-<span class='badge badge-default'>00:00:02:999</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:09:13 AM</td>
-        <td>
-          verifyInvalidLoginTest PASSED
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="4"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">verifyValidLoginTestsWithCSV</p>
             <p class="text-sm">
-              <span>5:09:10 AM</span> / <span>00:00:32:718</span>
+              <span>5:02:44 AM</span> / <span>00:00:33:173</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -235,10 +153,10 @@ Session ID: 380273afbbc87e8952f71dc21458c54e
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">verifyValidLoginTestsWithCSV</h5>
-<span class='badge badge-success'>08.17.2026 5:09:10 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:43 AM</span>
-<span class='badge badge-default'>00:00:32:718</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-success'>08.18.2026 5:02:44 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:17 AM</span>
+<span class='badge badge-default'>00:00:33:173</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -250,9 +168,131 @@ Session ID: 380273afbbc87e8952f71dc21458c54e
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:09:43 AM</td>
+        <td>5:03:17 AM</td>
         <td>
           verifyValidLoginTestsWithCSV SKIPPED
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyValidLoginTestWithJSON</p>
+            <p class="text-sm">
+              <span>5:02:44 AM</span> / <span>00:00:33:367</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyValidLoginTestWithJSON</h5>
+<span class='badge badge-success'>08.18.2026 5:02:44 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:17 AM</span>
+<span class='badge badge-default'>00:00:33:367</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/verifyValidLoginTestWithJSON2026-08-18_05-03-17.png' src="screenshots/verifyValidLoginTestWithJSON2026-08-18_05-03-17.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:03:17 AM</td>
+        <td>
+          verifyValidLoginTestWithJSON FAILED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:03:17 AM</td>
+        <td>
+          Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41143}, goog:processID: 2736, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41143/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c78b9dda4293577a186f85a991f8567
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyValidLoginTestWithJSON</p>
+            <p class="text-sm">
+              <span>5:02:44 AM</span> / <span>00:00:32:918</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyValidLoginTestWithJSON</h5>
+<span class='badge badge-success'>08.18.2026 5:02:44 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:17 AM</span>
+<span class='badge badge-default'>00:00:32:918</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='screenshots/verifyValidLoginTestWithJSON2026-08-18_05-03-17.png' src="screenshots/verifyValidLoginTestWithJSON2026-08-18_05-03-17.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:03:17 AM</td>
+        <td>
+          verifyValidLoginTestWithJSON FAILED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:03:17 AM</td>
+        <td>
+          Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43597}, goog:processID: 2732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43597/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b104acffec5bbd95ef2fee9d6a4fb239
         </td>
       </tr>
   </tbody>
@@ -267,7 +307,7 @@ Session ID: 380273afbbc87e8952f71dc21458c54e
           <div class="test-detail">
             <p class="name">verifyValidLoginTestsWithCSV</p>
             <p class="text-sm">
-              <span>5:09:10 AM</span> / <span>00:00:32:392</span>
+              <span>5:02:44 AM</span> / <span>00:00:32:743</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -276,9 +316,9 @@ Session ID: 380273afbbc87e8952f71dc21458c54e
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">verifyValidLoginTestsWithCSV</h5>
-<span class='badge badge-success'>08.17.2026 5:09:10 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:43 AM</span>
-<span class='badge badge-default'>00:00:32:392</span>
+<span class='badge badge-success'>08.18.2026 5:02:44 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:17 AM</span>
+<span class='badge badge-default'>00:00:32:743</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -291,7 +331,7 @@ Session ID: 380273afbbc87e8952f71dc21458c54e
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:09:43 AM</td>
+        <td>5:03:17 AM</td>
         <td>
           verifyValidLoginTestsWithCSV SKIPPED
         </td>
@@ -301,60 +341,40 @@ Session ID: 380273afbbc87e8952f71dc21458c54e
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="6"
+        <li class="test-item"  status="skip" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyValidLoginTestWithJSON</p>
+            <p class="name">verifyValidLoginTestsWithCSV</p>
             <p class="text-sm">
-              <span>5:09:10 AM</span> / <span>00:00:32:926</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>5:02:44 AM</span> / <span>00:00:32:753</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyValidLoginTestWithJSON</h5>
-<span class='badge badge-success'>08.17.2026 5:09:10 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:43 AM</span>
-<span class='badge badge-default'>00:00:32:926</span>
+<h5 class="test-status text-skip">verifyValidLoginTestsWithCSV</h5>
+<span class='badge badge-success'>08.18.2026 5:02:44 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:17 AM</span>
+<span class='badge badge-default'>00:00:32:753</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='screenshots/verifyValidLoginTestWithJSON2026-08-17_05-09-43.png' src="screenshots/verifyValidLoginTestWithJSON2026-08-17_05-09-43.png">
-  
-    
-
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:43 AM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:03:17 AM</td>
         <td>
-          verifyValidLoginTestWithJSON FAILED
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:43 AM</td>
-        <td>
-          Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44255}, goog:processID: 2585, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44255/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: df36e245f910cfe271fa6967eaa1fdcd
+          verifyValidLoginTestsWithCSV SKIPPED
         </td>
       </tr>
   </tbody>
@@ -369,7 +389,7 @@ Session ID: df36e245f910cfe271fa6967eaa1fdcd
           <div class="test-detail">
             <p class="name">verifyValidLoginTestWithJSON</p>
             <p class="text-sm">
-              <span>5:09:11 AM</span> / <span>00:00:32:657</span>
+              <span>5:02:44 AM</span> / <span>00:00:32:730</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -378,9 +398,9 @@ Session ID: df36e245f910cfe271fa6967eaa1fdcd
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">verifyValidLoginTestWithJSON</h5>
-<span class='badge badge-success'>08.17.2026 5:09:11 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:43 AM</span>
-<span class='badge badge-default'>00:00:32:657</span>
+<span class='badge badge-success'>08.18.2026 5:02:44 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:17 AM</span>
+<span class='badge badge-default'>00:00:32:730</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -390,7 +410,7 @@ Session ID: df36e245f910cfe271fa6967eaa1fdcd
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyValidLoginTestWithJSON2026-08-17_05-09-43.png' src="screenshots/verifyValidLoginTestWithJSON2026-08-17_05-09-43.png">
+<img data-featherlight='screenshots/verifyValidLoginTestWithJSON2026-08-18_05-03-17.png' src="screenshots/verifyValidLoginTestWithJSON2026-08-18_05-03-17.png">
   
     
 
@@ -401,21 +421,21 @@ Session ID: df36e245f910cfe271fa6967eaa1fdcd
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:43 AM</td>
+        <td>5:03:17 AM</td>
         <td>
           verifyValidLoginTestWithJSON FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:43 AM</td>
+        <td>5:03:17 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45897}, goog:processID: 2589, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45897/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eff78b598425da88905a2bc5e1d921fd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46237}, goog:processID: 2734, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46237/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aea3142e4e736113be5f99885f318a89
         </td>
       </tr>
   </tbody>
@@ -428,9 +448,9 @@ Session ID: eff78b598425da88905a2bc5e1d921fd
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyValidLoginTestsWithExcel</p>
+            <p class="name">verifyValidLoginTestsWithCSV</p>
             <p class="text-sm">
-              <span>5:09:17 AM</span> / <span>00:00:31:930</span>
+              <span>5:03:21 AM</span> / <span>00:00:35:118</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -438,10 +458,10 @@ Session ID: eff78b598425da88905a2bc5e1d921fd
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyValidLoginTestsWithExcel</h5>
-<span class='badge badge-success'>08.17.2026 5:09:17 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:49 AM</span>
-<span class='badge badge-default'>00:00:31:930</span>
+<h5 class="test-status text-fail">verifyValidLoginTestsWithCSV</h5>
+<span class='badge badge-success'>08.18.2026 5:03:21 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:56 AM</span>
+<span class='badge badge-default'>00:00:35:118</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -451,7 +471,7 @@ Session ID: eff78b598425da88905a2bc5e1d921fd
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyValidLoginTestsWithExcel2026-08-17_05-09-49.png' src="screenshots/verifyValidLoginTestsWithExcel2026-08-17_05-09-49.png">
+<img data-featherlight='screenshots/verifyValidLoginTestsWithCSV2026-08-18_05-03-56.png' src="screenshots/verifyValidLoginTestsWithCSV2026-08-18_05-03-56.png">
   
     
 
@@ -462,21 +482,21 @@ Session ID: eff78b598425da88905a2bc5e1d921fd
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:48 AM</td>
+        <td>5:03:56 AM</td>
         <td>
-          verifyValidLoginTestsWithExcel FAILED
+          verifyValidLoginTestsWithCSV FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:48 AM</td>
+        <td>5:03:56 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35337}, goog:processID: 3586, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35337/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: da461e0cba4bc29030b367504f808bd0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35479}, goog:processID: 4212, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35479/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 31e4ef1242b09c35c7e4072f3ac8c49c
         </td>
       </tr>
   </tbody>
@@ -489,9 +509,9 @@ Session ID: da461e0cba4bc29030b367504f808bd0
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyValidLoginTestsWithExcel</p>
+            <p class="name">verifyValidLoginTestsWithCSV</p>
             <p class="text-sm">
-              <span>5:09:17 AM</span> / <span>00:00:32:003</span>
+              <span>5:03:21 AM</span> / <span>00:00:35:170</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -499,10 +519,10 @@ Session ID: da461e0cba4bc29030b367504f808bd0
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyValidLoginTestsWithExcel</h5>
-<span class='badge badge-success'>08.17.2026 5:09:17 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:49 AM</span>
-<span class='badge badge-default'>00:00:32:003</span>
+<h5 class="test-status text-fail">verifyValidLoginTestsWithCSV</h5>
+<span class='badge badge-success'>08.18.2026 5:03:21 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:57 AM</span>
+<span class='badge badge-default'>00:00:35:170</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -512,7 +532,7 @@ Session ID: da461e0cba4bc29030b367504f808bd0
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyValidLoginTestsWithExcel2026-08-17_05-09-49.png' src="screenshots/verifyValidLoginTestsWithExcel2026-08-17_05-09-49.png">
+<img data-featherlight='screenshots/verifyValidLoginTestsWithCSV2026-08-18_05-03-57.png' src="screenshots/verifyValidLoginTestsWithCSV2026-08-18_05-03-57.png">
   
     
 
@@ -523,21 +543,21 @@ Session ID: da461e0cba4bc29030b367504f808bd0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:48 AM</td>
+        <td>5:03:56 AM</td>
         <td>
-          verifyValidLoginTestsWithExcel FAILED
+          verifyValidLoginTestsWithCSV FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:48 AM</td>
+        <td>5:03:56 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36555}, goog:processID: 3596, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36555/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ea233c222598517947f830c8958e2b56
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41475}, goog:processID: 4339, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41475/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 01afbaff7ae587eadf32e5b76ad1daf6
         </td>
       </tr>
   </tbody>
@@ -550,9 +570,9 @@ Session ID: ea233c222598517947f830c8958e2b56
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyValidLoginTestsWithExcel</p>
+            <p class="name">verifyValidLoginTestsWithCSV</p>
             <p class="text-sm">
-              <span>5:09:17 AM</span> / <span>00:00:31:771</span>
+              <span>5:03:21 AM</span> / <span>00:00:34:967</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -560,10 +580,10 @@ Session ID: ea233c222598517947f830c8958e2b56
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyValidLoginTestsWithExcel</h5>
-<span class='badge badge-success'>08.17.2026 5:09:17 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:09:49 AM</span>
-<span class='badge badge-default'>00:00:31:771</span>
+<h5 class="test-status text-fail">verifyValidLoginTestsWithCSV</h5>
+<span class='badge badge-success'>08.18.2026 5:03:21 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:56 AM</span>
+<span class='badge badge-default'>00:00:34:967</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -573,7 +593,7 @@ Session ID: ea233c222598517947f830c8958e2b56
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyValidLoginTestsWithExcel2026-08-17_05-09-49.png' src="screenshots/verifyValidLoginTestsWithExcel2026-08-17_05-09-49.png">
+<img data-featherlight='screenshots/verifyValidLoginTestsWithCSV2026-08-18_05-03-56.png' src="screenshots/verifyValidLoginTestsWithCSV2026-08-18_05-03-56.png">
   
     
 
@@ -584,21 +604,21 @@ Session ID: ea233c222598517947f830c8958e2b56
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:48 AM</td>
+        <td>5:03:56 AM</td>
         <td>
-          verifyValidLoginTestsWithExcel FAILED
+          verifyValidLoginTestsWithCSV FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:09:48 AM</td>
+        <td>5:03:56 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37317}, goog:processID: 3606, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37317/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e8f303856ea93afea5d2a31c13374d67
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45683}, goog:processID: 4261, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45683/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f15cdec8e6133c908ed99f39f01a2ccb
         </td>
       </tr>
   </tbody>
@@ -611,9 +631,9 @@ Session ID: e8f303856ea93afea5d2a31c13374d67
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyValidLoginTestsWithCSV</p>
+            <p class="name">verifyRetriesAndScreenshot</p>
             <p class="text-sm">
-              <span>5:09:46 AM</span> / <span>00:00:32:761</span>
+              <span>5:03:22 AM</span> / <span>00:00:34:205</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -621,10 +641,10 @@ Session ID: e8f303856ea93afea5d2a31c13374d67
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyValidLoginTestsWithCSV</h5>
-<span class='badge badge-success'>08.17.2026 5:09:46 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:19 AM</span>
-<span class='badge badge-default'>00:00:32:761</span>
+<h5 class="test-status text-fail">verifyRetriesAndScreenshot</h5>
+<span class='badge badge-success'>08.18.2026 5:03:22 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:57 AM</span>
+<span class='badge badge-default'>00:00:34:205</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -634,7 +654,7 @@ Session ID: e8f303856ea93afea5d2a31c13374d67
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyValidLoginTestsWithCSV2026-08-17_05-10-19.png' src="screenshots/verifyValidLoginTestsWithCSV2026-08-17_05-10-19.png">
+<img data-featherlight='screenshots/verifyRetriesAndScreenshot2026-08-18_05-03-57.png' src="screenshots/verifyRetriesAndScreenshot2026-08-18_05-03-57.png">
   
     
 
@@ -645,21 +665,21 @@ Session ID: e8f303856ea93afea5d2a31c13374d67
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:19 AM</td>
+        <td>5:03:57 AM</td>
         <td>
-          verifyValidLoginTestsWithCSV FAILED
+          verifyRetriesAndScreenshot FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:19 AM</td>
+        <td>5:03:57 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39889}, goog:processID: 4659, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39889/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f6cb2a73c94142a58e06c9bb502c8a6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42619}, goog:processID: 4624, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42619/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ad46290e7acb35a643e10991e0d0c40
         </td>
       </tr>
   </tbody>
@@ -674,7 +694,7 @@ Session ID: 8f6cb2a73c94142a58e06c9bb502c8a6
           <div class="test-detail">
             <p class="name">verifyRetriesAndScreenshot</p>
             <p class="text-sm">
-              <span>5:09:47 AM</span> / <span>00:00:32:725</span>
+              <span>5:03:23 AM</span> / <span>00:00:34:339</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -683,9 +703,9 @@ Session ID: 8f6cb2a73c94142a58e06c9bb502c8a6
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">verifyRetriesAndScreenshot</h5>
-<span class='badge badge-success'>08.17.2026 5:09:47 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:20 AM</span>
-<span class='badge badge-default'>00:00:32:725</span>
+<span class='badge badge-success'>08.18.2026 5:03:23 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:57 AM</span>
+<span class='badge badge-default'>00:00:34:339</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -695,7 +715,7 @@ Session ID: 8f6cb2a73c94142a58e06c9bb502c8a6
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyRetriesAndScreenshot2026-08-17_05-10-20.png' src="screenshots/verifyRetriesAndScreenshot2026-08-17_05-10-20.png">
+<img data-featherlight='screenshots/verifyRetriesAndScreenshot2026-08-18_05-03-57.png' src="screenshots/verifyRetriesAndScreenshot2026-08-18_05-03-57.png">
   
     
 
@@ -706,21 +726,21 @@ Session ID: 8f6cb2a73c94142a58e06c9bb502c8a6
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:20 AM</td>
+        <td>5:03:57 AM</td>
         <td>
           verifyRetriesAndScreenshot FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:20 AM</td>
+        <td>5:03:57 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42179}, goog:processID: 5031, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42179/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: abbc7641227230ee48a79782dd77bd9d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43235}, goog:processID: 4585, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43235/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de1a9cefa9b06d76c7eb636284ca2584
         </td>
       </tr>
   </tbody>
@@ -733,9 +753,9 @@ Session ID: abbc7641227230ee48a79782dd77bd9d
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyValidLoginTestsWithCSV</p>
+            <p class="name">verifyRetriesAndScreenshot</p>
             <p class="text-sm">
-              <span>5:09:47 AM</span> / <span>00:00:32:903</span>
+              <span>5:03:23 AM</span> / <span>00:00:34:154</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -743,10 +763,10 @@ Session ID: abbc7641227230ee48a79782dd77bd9d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyValidLoginTestsWithCSV</h5>
-<span class='badge badge-success'>08.17.2026 5:09:47 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:20 AM</span>
-<span class='badge badge-default'>00:00:32:903</span>
+<h5 class="test-status text-fail">verifyRetriesAndScreenshot</h5>
+<span class='badge badge-success'>08.18.2026 5:03:23 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:57 AM</span>
+<span class='badge badge-default'>00:00:34:154</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -756,7 +776,7 @@ Session ID: abbc7641227230ee48a79782dd77bd9d
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyValidLoginTestsWithCSV2026-08-17_05-10-20.png' src="screenshots/verifyValidLoginTestsWithCSV2026-08-17_05-10-20.png">
+<img data-featherlight='screenshots/verifyRetriesAndScreenshot2026-08-18_05-03-57.png' src="screenshots/verifyRetriesAndScreenshot2026-08-18_05-03-57.png">
   
     
 
@@ -767,21 +787,21 @@ Session ID: abbc7641227230ee48a79782dd77bd9d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:20 AM</td>
+        <td>5:03:57 AM</td>
         <td>
-          verifyValidLoginTestsWithCSV FAILED
+          verifyRetriesAndScreenshot FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:20 AM</td>
+        <td>5:03:57 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36877}, goog:processID: 4873, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36877/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7259260e7334609ab52817428e5a3056
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34631}, goog:processID: 4619, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34631/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71b763428b30e4cc3040300e6f8a2318
         </td>
       </tr>
   </tbody>
@@ -794,9 +814,9 @@ Session ID: 7259260e7334609ab52817428e5a3056
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyValidLoginTestsWithCSV</p>
+            <p class="name">verifyValidLoginTestsWithExcel</p>
             <p class="text-sm">
-              <span>5:09:47 AM</span> / <span>00:00:32:415</span>
+              <span>5:03:25 AM</span> / <span>00:00:33:385</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -804,10 +824,10 @@ Session ID: 7259260e7334609ab52817428e5a3056
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyValidLoginTestsWithCSV</h5>
-<span class='badge badge-success'>08.17.2026 5:09:47 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:19 AM</span>
-<span class='badge badge-default'>00:00:32:415</span>
+<h5 class="test-status text-fail">verifyValidLoginTestsWithExcel</h5>
+<span class='badge badge-success'>08.18.2026 5:03:25 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:58 AM</span>
+<span class='badge badge-default'>00:00:33:385</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -817,7 +837,7 @@ Session ID: 7259260e7334609ab52817428e5a3056
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyValidLoginTestsWithCSV2026-08-17_05-10-19.png' src="screenshots/verifyValidLoginTestsWithCSV2026-08-17_05-10-19.png">
+<img data-featherlight='screenshots/verifyValidLoginTestsWithExcel2026-08-18_05-03-58.png' src="screenshots/verifyValidLoginTestsWithExcel2026-08-18_05-03-58.png">
   
     
 
@@ -828,21 +848,21 @@ Session ID: 7259260e7334609ab52817428e5a3056
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:19 AM</td>
+        <td>5:03:58 AM</td>
         <td>
-          verifyValidLoginTestsWithCSV FAILED
+          verifyValidLoginTestsWithExcel FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:19 AM</td>
+        <td>5:03:58 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43177}, goog:processID: 4908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43177/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f3110eee3f4cb77b5db2d29eb787545c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37093}, goog:processID: 5137, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37093/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 008fdaa1f9c4f8c94e7af0131da05a5b
         </td>
       </tr>
   </tbody>
@@ -855,9 +875,9 @@ Session ID: f3110eee3f4cb77b5db2d29eb787545c
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyRetriesAndScreenshot</p>
+            <p class="name">verifyValidLoginTestsWithExcel</p>
             <p class="text-sm">
-              <span>5:09:47 AM</span> / <span>00:00:32:380</span>
+              <span>5:03:25 AM</span> / <span>00:00:32:870</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -865,10 +885,10 @@ Session ID: f3110eee3f4cb77b5db2d29eb787545c
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyRetriesAndScreenshot</h5>
-<span class='badge badge-success'>08.17.2026 5:09:47 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:20 AM</span>
-<span class='badge badge-default'>00:00:32:380</span>
+<h5 class="test-status text-fail">verifyValidLoginTestsWithExcel</h5>
+<span class='badge badge-success'>08.18.2026 5:03:25 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:58 AM</span>
+<span class='badge badge-default'>00:00:32:870</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -878,7 +898,7 @@ Session ID: f3110eee3f4cb77b5db2d29eb787545c
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyRetriesAndScreenshot2026-08-17_05-10-20.png' src="screenshots/verifyRetriesAndScreenshot2026-08-17_05-10-20.png">
+<img data-featherlight='screenshots/verifyValidLoginTestsWithExcel2026-08-18_05-03-58.png' src="screenshots/verifyValidLoginTestsWithExcel2026-08-18_05-03-58.png">
   
     
 
@@ -889,21 +909,21 @@ Session ID: f3110eee3f4cb77b5db2d29eb787545c
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:20 AM</td>
+        <td>5:03:57 AM</td>
         <td>
-          verifyRetriesAndScreenshot FAILED
+          verifyValidLoginTestsWithExcel FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:20 AM</td>
+        <td>5:03:57 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38699}, goog:processID: 4958, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38699/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 63ff45013e60b83c3e28d4195df2fdfd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41073}, goog:processID: 5129, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41073/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd1577fc484171d316bb661622f4f7c9
         </td>
       </tr>
   </tbody>
@@ -916,9 +936,9 @@ Session ID: 63ff45013e60b83c3e28d4195df2fdfd
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyRetriesAndScreenshot</p>
+            <p class="name">verifyValidLoginTestsWithExcel</p>
             <p class="text-sm">
-              <span>5:09:47 AM</span> / <span>00:00:32:258</span>
+              <span>5:03:25 AM</span> / <span>00:00:32:758</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -926,10 +946,10 @@ Session ID: 63ff45013e60b83c3e28d4195df2fdfd
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyRetriesAndScreenshot</h5>
-<span class='badge badge-success'>08.17.2026 5:09:47 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:20 AM</span>
-<span class='badge badge-default'>00:00:32:258</span>
+<h5 class="test-status text-fail">verifyValidLoginTestsWithExcel</h5>
+<span class='badge badge-success'>08.18.2026 5:03:25 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:03:58 AM</span>
+<span class='badge badge-default'>00:00:32:758</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -939,7 +959,7 @@ Session ID: 63ff45013e60b83c3e28d4195df2fdfd
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyRetriesAndScreenshot2026-08-17_05-10-20.png' src="screenshots/verifyRetriesAndScreenshot2026-08-17_05-10-20.png">
+<img data-featherlight='screenshots/verifyValidLoginTestsWithExcel2026-08-18_05-03-58.png' src="screenshots/verifyValidLoginTestsWithExcel2026-08-18_05-03-58.png">
   
     
 
@@ -950,21 +970,21 @@ Session ID: 63ff45013e60b83c3e28d4195df2fdfd
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:20 AM</td>
+        <td>5:03:58 AM</td>
         <td>
-          verifyRetriesAndScreenshot FAILED
+          verifyValidLoginTestsWithExcel FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:20 AM</td>
+        <td>5:03:58 AM</td>
         <td>
           Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'My Account')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35641}, goog:processID: 4977, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35641/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af54f9aabcf5c9f92e3fa08ebb0fea01
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39341}, goog:processID: 5219, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39341/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 751fbe423a978c2d4025af3c6926cd95
         </td>
       </tr>
   </tbody>
@@ -979,7 +999,7 @@ Session ID: af54f9aabcf5c9f92e3fa08ebb0fea01
           <div class="test-detail">
             <p class="name">verifyAddNewAddress</p>
             <p class="text-sm">
-              <span>5:09:53 AM</span> / <span>00:01:01:902</span>
+              <span>5:04:01 AM</span> / <span>00:01:02:144</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -988,9 +1008,9 @@ Session ID: af54f9aabcf5c9f92e3fa08ebb0fea01
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">verifyAddNewAddress</h5>
-<span class='badge badge-success'>08.17.2026 5:09:53 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:55 AM</span>
-<span class='badge badge-default'>00:01:01:902</span>
+<span class='badge badge-success'>08.18.2026 5:04:01 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:05:03 AM</span>
+<span class='badge badge-default'>00:01:02:144</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1000,7 +1020,7 @@ Session ID: af54f9aabcf5c9f92e3fa08ebb0fea01
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyAddNewAddress2026-08-17_05-10-55.png' src="screenshots/verifyAddNewAddress2026-08-17_05-10-55.png">
+<img data-featherlight='screenshots/verifyAddNewAddress2026-08-18_05-05-03.png' src="screenshots/verifyAddNewAddress2026-08-18_05-05-03.png">
   
     
 
@@ -1011,21 +1031,21 @@ Session ID: af54f9aabcf5c9f92e3fa08ebb0fea01
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:55 AM</td>
+        <td>5:05:03 AM</td>
         <td>
           verifyAddNewAddress FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:55 AM</td>
+        <td>5:05:03 AM</td>
         <td>
           Expected condition failed: waiting for element to be clickable: By.id: input-company (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39187}, goog:processID: 5647, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39187/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e2ae694ff627b6e768471640abe66e4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38347}, goog:processID: 6295, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38347/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a3b9de523c6d4ec237d4324f51eff7
         </td>
       </tr>
   </tbody>
@@ -1040,7 +1060,7 @@ Session ID: 7e2ae694ff627b6e768471640abe66e4
           <div class="test-detail">
             <p class="name">verifyProductSearchTest</p>
             <p class="text-sm">
-              <span>5:10:23 AM</span> / <span>00:00:01:074</span>
+              <span>5:04:02 AM</span> / <span>00:00:01:039</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1049,9 +1069,9 @@ Session ID: 7e2ae694ff627b6e768471640abe66e4
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">verifyProductSearchTest</h5>
-<span class='badge badge-success'>08.17.2026 5:10:23 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:24 AM</span>
-<span class='badge badge-default'>00:00:01:074</span>
+<span class='badge badge-success'>08.18.2026 5:04:02 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:04:03 AM</span>
+<span class='badge badge-default'>00:00:01:039</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1064,7 +1084,7 @@ Session ID: 7e2ae694ff627b6e768471640abe66e4
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:10:24 AM</td>
+        <td>5:04:03 AM</td>
         <td>
           verifyProductSearchTest PASSED
         </td>
@@ -1081,7 +1101,7 @@ Session ID: 7e2ae694ff627b6e768471640abe66e4
           <div class="test-detail">
             <p class="name">verifyProductOrder</p>
             <p class="text-sm">
-              <span>5:10:25 AM</span> / <span>00:00:33:118</span>
+              <span>5:04:03 AM</span> / <span>00:00:33:415</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -1090,9 +1110,9 @@ Session ID: 7e2ae694ff627b6e768471640abe66e4
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">verifyProductOrder</h5>
-<span class='badge badge-success'>08.17.2026 5:10:25 AM</span>
-<span class='badge badge-danger'>08.17.2026 5:10:58 AM</span>
-<span class='badge badge-default'>00:00:33:118</span>
+<span class='badge badge-success'>08.18.2026 5:04:03 AM</span>
+<span class='badge badge-danger'>08.18.2026 5:04:37 AM</span>
+<span class='badge badge-default'>00:00:33:415</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -1102,7 +1122,7 @@ Session ID: 7e2ae694ff627b6e768471640abe66e4
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='screenshots/verifyProductOrder2026-08-17_05-10-58.png' src="screenshots/verifyProductOrder2026-08-17_05-10-58.png">
+<img data-featherlight='screenshots/verifyProductOrder2026-08-18_05-04-37.png' src="screenshots/verifyProductOrder2026-08-18_05-04-37.png">
   
     
 
@@ -1113,21 +1133,21 @@ Session ID: 7e2ae694ff627b6e768471640abe66e4
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:58 AM</td>
+        <td>5:04:36 AM</td>
         <td>
           verifyProductOrder FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>5:10:58 AM</td>
+        <td>5:04:36 AM</td>
         <td>
           Expected condition failed: waiting for element to be clickable: By.xpath: //input[@name='shipping_method'] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1022-azure', java.version: '21.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45621}, goog:processID: 6406, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45621/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c932a07262f5b4f9527421e725f68309
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.108, chrome: {chromedriverVersion: 151.0.7922.77 (ff37cfca2101..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36715}, goog:processID: 6627, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36715/devtoo..., se:cdpVersion: 151.0.7922.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c5a43436272378a5e08b650784951e1
         </td>
       </tr>
   </tbody>
@@ -1149,25 +1169,25 @@ Session ID: c932a07262f5b4f9527421e725f68309
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 17, 2026 05:08:57 AM</h3>
+<h3>Aug 18, 2026 05:02:37 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 17, 2026 05:10:58 AM</h3>
+<h3>Aug 18, 2026 05:05:03 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>14</h3>
+<h3>15</h3>
 </div></div>
 </div>
 </div>
@@ -1183,12 +1203,12 @@ Session ID: c932a07262f5b4f9527421e725f68309
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='10%'>
-<b>2</b> tests passed
+<div><small data-tooltip='5%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='73%'><b>14</b> tests failed,
+<small data-tooltip='78%'><b>15</b> tests failed,
 <b>3</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1206,9 +1226,9 @@ Session ID: c932a07262f5b4f9527421e725f68309
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='6%'><b>2</b> events passed</small></div>
+<div><small data-tooltip='2%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='84%'><b>28</b> events failed,
+<small data-tooltip='88%'><b>30</b> events failed,
 <b data-tooltip='%'>3</b> others
 </small>
 </div>
@@ -1225,7 +1245,7 @@ Session ID: c932a07262f5b4f9527421e725f68309
 </div></div>
 <script>
 var timeline = {
-"verifyValidLoginTestsWithCSV":32.993,"verifyValidLoginTestWithJSON":33.137,"verifyInvalidLoginTest":2.999,"verifyValidLoginTestsWithCSV":32.718,"verifyValidLoginTestsWithCSV":32.392,"verifyValidLoginTestWithJSON":32.926,"verifyValidLoginTestWithJSON":32.657,"verifyValidLoginTestsWithExcel":31.93,"verifyValidLoginTestsWithExcel":32.003,"verifyValidLoginTestsWithExcel":31.771,"verifyValidLoginTestsWithCSV":32.761,"verifyRetriesAndScreenshot":32.725,"verifyValidLoginTestsWithCSV":32.903,"verifyValidLoginTestsWithCSV":32.415,"verifyRetriesAndScreenshot":32.38,"verifyRetriesAndScreenshot":32.258,"verifyAddNewAddress":61.902,"verifyProductSearchTest":1.074,"verifyProductOrder":33.118
+"verifyInvalidLoginTest":33.526,"verifyValidLoginTestsWithCSV":33.173,"verifyValidLoginTestWithJSON":33.367,"verifyValidLoginTestWithJSON":32.918,"verifyValidLoginTestsWithCSV":32.743,"verifyValidLoginTestsWithCSV":32.753,"verifyValidLoginTestWithJSON":32.73,"verifyValidLoginTestsWithCSV":35.118,"verifyValidLoginTestsWithCSV":35.17,"verifyValidLoginTestsWithCSV":34.967,"verifyRetriesAndScreenshot":34.205,"verifyRetriesAndScreenshot":34.339,"verifyRetriesAndScreenshot":34.154,"verifyValidLoginTestsWithExcel":33.385,"verifyValidLoginTestsWithExcel":32.87,"verifyValidLoginTestsWithExcel":32.758,"verifyAddNewAddress":62.144,"verifyProductSearchTest":1.039,"verifyProductOrder":33.415
 };
 </script>
 <div class="row">
@@ -1234,8 +1254,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 14,
+passParent: 1,
+failParent: 15,
 warningParent: 0,
 skipParent: 3,
 childCount: 5,
@@ -1251,8 +1271,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 2,
-failEvents: 28,
+passEvents: 1,
+failEvents: 30,
 warningEvents: 0,
 skipEvents: 3,
 infoEvents: 0
